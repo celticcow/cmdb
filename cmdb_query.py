@@ -59,6 +59,10 @@ class cmdb_query(object):
     def print_cmdb(self):
         out_str = "{name : " + self.name + ", ip : " + self.ip + ", fqdn : " + self.fqdn + ", location : " + self.location + ", Sys_Class_Name : " + self.sys_class_name + ", Support Group : " + self.support_group + ", Support Group Manager : " + self.support_group_manager + "}"
         print(out_str)
+    
+    def get_cmdb_info(self):
+        out_str = "{name : " + self.name + ", ip : " + self.ip + ", fqdn : " + self.fqdn + ", location : " + self.location + ", Sys_Class_Name : " + self.sys_class_name + ", Support Group : " + self.support_group + ", Support Group Manager : " + self.support_group_manager + "}"
+        return(out_str)
 
     #modifiers
     def set_ip(self, ip):
